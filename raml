@@ -1,0 +1,16 @@
+#%RAML 1.0
+title: info
+/message:
+  post:
+    queryParameters:
+      name:
+        type: string
+        maxLength: 6
+        example: abebe 
+        required: true
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {message: "hello biruk  welcome to mulesoft, today is 06-19-21"}
